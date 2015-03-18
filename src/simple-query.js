@@ -28,8 +28,11 @@
 			var element = arguments[0];
 			switch(arguments.length) {
 				case 2:
-					//$(element).css(arguments[1]);
-					document.element.style.color = arguments[1].color;
+				$(element).css(arguments[1]);
+				// document.element.style.color = arguments[1].color;
+				//	document.element.setAttribute = (arguments[1],style);
+				//	element.style.height = arguments[1].height;
+				//	element.style.display = arguments[1].display;
 					break;
 				case 3:
 					$(element).css(arguments[1], arguments[2]);
@@ -41,3 +44,4 @@
 
 	};
 })(this);
+
